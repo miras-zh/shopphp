@@ -1,0 +1,18 @@
+{
+    "autoload": {
+        "psr-4": {
+            "shopphp\\": "vendor/shopphp",
+            "app\\": "app"
+        }
+    },
+    "name": "miko/shopphp",
+    "license": "free",
+    "authors": [
+        {
+            "name": "mikos.zh"
+        }
+    ],
+    "require": {
+
+    }
+}
