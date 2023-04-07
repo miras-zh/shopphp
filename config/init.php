@@ -21,7 +21,7 @@ $app_path = preg_replace("#[^/]+$#",'', $app_path);
 //http://shopphp.local:8079
 $app_path = str_replace('/public/','', $app_path);
 
-echo ": {$app_path}";
+//echo ": {$app_path}";
 define("PATH", $app_path);
 
 const ADMIN = PATH . 'admin';
