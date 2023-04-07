@@ -6,10 +6,10 @@ define("ROOT", dirname(__DIR__));
 //echo ROOT;
 const WWW = ROOT . '/public';
 const APP = ROOT . '/app';
-const CORE = ROOT . '/vendor/ishop/core';
-const LIBS = ROOT . '/vendor/ishop/libs';
+const CORE = ROOT . '/vendor/ishop/core/';
+const LIBS = ROOT . '/vendor/ishop/core/libs/';
 const CACHE = ROOT . '/tmp/cache';
-const CONF = ROOT . '/config';
+const CONF = ROOT . '/config/';
 const LAYOUT = 'default';
 
 //http://shopphp.local:8079/index.php
