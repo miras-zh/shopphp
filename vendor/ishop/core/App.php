@@ -11,17 +11,18 @@ class App
         $query = trim($_SERVER['REQUEST_URI'], '/');
 //        var_dump($query);
 
-        echo '<br />';
-        echo $_SERVER['REQUEST_URI'];
-        echo '<br />';
+//        echo '<br />';
+//        echo $_SERVER['REQUEST_URI'];
+//        echo '<br />';
 
-        echo '<pre>';
-        print_r($_SERVER);
-        echo '</pre>';
+//        echo '<pre>';
+//        print_r($_SERVER);
+//        echo '</pre>';
 
         session_start();
         self::$app = Registry::instance();
         $this->getParams();
+        new ErrorHandler();
     }
 
     protected function getParams(){
