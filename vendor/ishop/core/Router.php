@@ -21,11 +21,43 @@ class Router
         return self::$route;
     }
 
-    public function dispatch($url){
-
+    public static function dispatch($url){
+        if(self::matchRoute($url)){
+            echo 'OK DISPATCH';
+        }else{
+            echo 'NO DISPATCH';
+        }
     }
 
-    public function matchRoute($url){
-
+    public static function matchRoute($url): bool
+    {
+        foreach (self::$routes as $pattern => $route){
+            if(preg_match("#{$pattern}#", $url, $matches)){
+                showVar($matches);
+                return true;
+            }
+        }
+        return false;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -26,6 +26,7 @@ class ErrorHandler
     }
 
     protected function  displayError($errno, $errstr, $errfile, $errline, $response = 404){
+        echo "$errno={$errno}, $errstr={$errstr}, $errfile={$errfile}, $errline={$errline}, $response={$response}" ;
         http_response_code($response);
         if($response == 404 && !DEBUG){
             require WWW . '/errors/404.php';
